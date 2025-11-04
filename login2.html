@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Professional Login Page</title>
+    <style>
+   *{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    font-family: "Segoe UI", sans-serif;
+   }
+   body{
+    background: linear-gradient(200deg, rgba(18, 21, 155, 0.884), rgba(61, 91, 192, 0.815));
+    display: flex;
+    align-items: center;
+    height: 100vh;
+    justify-content: center;
+   }
+   .Login-Tab{
+    background: rgba(255, 255, 255, 0.15);
+    width: 320px;
+    padding: 40px;
+    box-sizing: border-box;
+    box-shadow:0 10px 25px rgba(0,0,0,0.2);
+    border-radius: 15px;
+    backdrop-filter: blur(15px);
+    animation:  fadeIn 2s ease-in-out;
+   }
+   h2{
+    text-align: center;
+    color: white;
+    font-weight: 600;
+    margin-bottom: 25px;
+   }
+.boxes{
+    margin-bottom: 20px;
+}
+
+   @keyframes fadeIn {
+    from{opacity: 0;transform: translateY(-20px);}
+    to{opacity: 1; transform: translateY(0);}
+   }
+   label{
+    color: white;
+    display: block;
+    margin-bottom: 5px;
+    font-size: 14px;
+
+   }
+   input{
+    border-radius: 8px;
+    width: 100%;
+    padding: 10px;
+    font-size: 14px;
+    background: rgba(255, 255, 255, 0.822);
+    border: none;
+    outline: none;
+   }
+
+
+
+
+    </style>
+</head>
+<body>
+  <div class="Login-Tab">
+<h2>Login</h2>
+<form>
+<div class="boxes">
+    <label for="Username">Email</label>
+    <input type="email" id="username" placeholder="Enter your email" required>
+
+</div>
+<div class="boxes">
+<label for="password">Password</label>
+<input form="password" id="password" placeholder="Enter your password" required>
+</div>
+
+</form>
+  </div>
+    
+    
+</body>
+</html>
