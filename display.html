@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Inline vs Inline-Block</title>
+  <style>
+    .inline-box {
+      display: block;
+      background-color: lightblue;
+      width: 150px; /* ❌ won't apply */
+      height: 100px; /* ❌ won't apply */
+      padding: 10px;
+      border: 2px solid blue;
+    }
+
+    .inline-block-box {
+      display: inline-block;
+      background-color: lightgreen;
+      width: 150px;  /* ✅ applies */
+      height: 200px; /* ✅ applies */
+      
+      border: 2px solid green;
+    }
+
+    body {
+      font-family: Arial, sans-serif;
+      line-height: 2;
+    }
+    .expblok{
+display:block;
+ height: 200px ;
+ 
+background-color: yellow;
+
+    }
+  </style>
+</head>
+<body>
+ 
+  <h2>🔹 Inline Boxes</h2>
+  <div class="inline-box">Inline 1</div>
+  <div class="inline-box">Inline 2</div>
+  <div class="inline-box">Inline 3</div>
+
+  <h2>🔹 Inline-Block Boxes</h2>
+  <div class="inline-block-box">Inline-Block 1</div>
+  <div class="inline-block-box">Inline-Block 2</div>
+  <div class="inline-block-box">Inline-Block 3</div>
+
+</body>
+</html>
+!
