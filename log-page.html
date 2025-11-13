@@ -22,8 +22,29 @@ align-items: center;
         .login-container{
 
 
-            
+
+background: rgb(218, 215, 215);
+padding: 30px 40px;
+border-radius: 10px;
+width: 340px;
+text-align: center;
+box-shadow: 0 0 4px rgba(96, 94, 94, 0.675);
+animation: fadeIn 0.6s ease-in-out;
+
+
         }
+    @keyframes fadeIn {
+from {opacity: 0; transform: translateY(-10px);}
+to {opacity: 1; transform: translateY(0);}
+
+    }
+    .login-container h2 {
+
+margin-bottom: 20px;
+color: rgb(32, 30, 30);
+
+
+    }
         
 
         
@@ -35,7 +56,11 @@ align-items: center;
 <form action="" method="post">
 <div>
     <label for="Username">Username</label>
-    <input>
+    <input type="text" id="username" name="username" placeholder="Enter your username" required>
+</div>
+<div>
+    <label for="Password">Password</label>
+    <input type="numbericals" id="password" name="password" placeholder="Enter your password" required>
 </div>
 
 
